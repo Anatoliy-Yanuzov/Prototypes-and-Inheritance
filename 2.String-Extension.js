@@ -24,11 +24,11 @@
         if (this.toString().length <= n) {
             return this.toString();
         } else {
-            let lastIndex = this.toString().substr(0, n - 2).lastIndexOf(" ");
+            let lastIndex = this.toString().substring(0, n - 2).lastIndexOf(" ");
             if (lastIndex != -1) {
-                return this.toString().substr(0, lastIndex) + "...";
+                return this.toString().substring(0, lastIndex) + "...";
             } else {
-                return this.toString().substr(0, n - 3) + "...";
+                return this.toString().substring(0, n - 3) + "...";
             }
         }
     };
